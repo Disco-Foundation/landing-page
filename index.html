@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Disco Protocol - Get your groove on!</title>
+    <link rel="stylesheet" href="./utilities.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body class="m-0">
+    <header class="header p-30">
+      <div class="logo-container">
+        <div class="logo">
+          <img
+            src="https://arweave.net/za2HnCvR2t9uog3IrsAxRQhbt5DXCHgyv20l3pu26V4"
+            alt="Main logo"
+          />
+        </div>
+        <h1 class="m-0">Disco <span class="disco-font-two">Protocol</span></h1>
+      </div>
+      <div class="header-opts">
+        <a href="mailto:andresmgsl@gmail.com">
+          <span>Contact us</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="main-content m-0 mb-140 mb-sm-100">
+      <section
+        class="content flex-center mt-350 mt-sm-250 mt-xs-200"
+        aria-labelledby="main-title"
+      >
+        <div>
+          <h1 id="main-title" class="m-0 mb-10">
+            Making events funky using Solana.
+          </h1>
+          <h2 id="second-title">Get your <span>groove</span> on!</h2>
+        </div>
+        <a href="https://board.disco.foundation/" target="_blank">
+          <button>Launch app</button>
+        </a>
+      </section>
+
+      <section
+        class="content max-width-550 mt-200 mt-xs-100"
+        aria-labelledby="disco-protocol-roadmap"
+      ></section>
+
+      <div class="gif-background">
+        <img src="./party.gif" />
+      </div>
+    </main>
+
+    <footer class="footer p-30" aria-labelledby="footer-text">
+      <div id="footer-text">🄯 2022 Disco Protocol</div>
+      <div>
+        <a
+          id="disco-protocol-discord"
+          href="https://discord.gg/"
+          arial-laber="Disco Protocol Official Discord"
+          target="_blank"
+        >
+          <img
+            src="https://xycjqai56g6atvzjnkoo6jbfcdbh33hhuuqkb5pxaau64tyfeh2q.arweave.net/vgSYAR3xvAnXKWqc7yQlEMJ97OelIKD19wAp7k8FIfU"
+          />
+        </a>
+        <a
+          id="disco-protocol-twitter"
+          href="https://twitter.com/DISCO_Protocol"
+          arial-laber="Disco Protocol Official Twitter"
+          target="_blank"
+        >
+          <img
+            src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const processSubscriptionForm = (form) => {
+        const data = new FormData(form);
+        data.append("form-name", "subscription");
+        fetch("/", {
+          method: "POST",
+          body: data,
+        })
+          .then(() => {
+            form.innerHTML = `<div class="form-success p-16">Almost there! We'll contact you.</div>`;
+          })
+          .catch((error) => {
+            form.innerHTML = `<div class="form-error p-16">Error: ${error}</div>`;
+          });
+      };
+    </script>
+  </body>
+</html>

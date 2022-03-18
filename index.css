@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap");
+
+@font-face {
+  font-family: "Custom Font";
+  src: url("https://arweave.net/3Y-DGYCsuPiUaACekJKrnXCfbvqqvSUgCTMkGBw0qFg");
+}
+
+body {
+  background-color: #020934;
+  font-family: "Baloo 2";
+  color: #e6e6e6;
+}
+
+body > * {
+  box-sizing: border-box;
+}
+
+html {
+  --scrollbarBG: #030e4c;
+  --thumbBG: #00f0ff;
+}
+body::-webkit-scrollbar {
+  width: 13px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  /* background-color: #020934; */
+  z-index: 10;
+  box-shadow: 0px 4px 15px -4px rgb(0 0 0 / 4%);
+  /* border-top: 4px solid #fb4cf9; */
+  font-family: "Custom Font";
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 48px;
+  margin-right: 8px;
+}
+
+.logo-container h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.header-opts {
+  font-size: 20px;
+}
+
+.header-opts a {
+  margin-left: 40px;
+  text-shadow: 0 0 10px #fb4cf9;
+}
+
+.header-opts a img {
+  display: none;
+}
+.disco-font-two {
+  font-family: "Baloo 2";
+  font-size: 24px;
+}
+
+.main-content {
+  width: 100%;
+  min-height: calc(100vh - 301px);
+  /* header heigh + footer heigh*/
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-content .gif-background {
+  width: 100%;
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  top: 0px;
+}
+
+.main-content .gif-background img {
+  width: 100%;
+  filter: blur(15px);
+  opacity: 0.1;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 768px;
+  z-index: 10;
+}
+
+.content h1 {
+  font-weight: 400;
+  font-size: 42px;
+
+  color: #00f0ff;
+  text-shadow: 0px 0px 8px #00f0ff;
+  font-family: "Custom Font";
+}
+
+.content h2 {
+  font-weight: 400;
+  font-size: 26px;
+
+  font-family: "Custom Font";
+}
+
+.content h2 span {
+  color: #ffd600;
+  text-shadow: 0px 0px 16px #ffd600;
+}
+
+.content p {
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.content .nice-title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 0 0 20px #fb4cf9;
+}
+
+.content .nice-title::after {
+  text-shadow: 0 0 32px #57f5ff;
+  font-family: "Custom Font";
+  color: #e6e6e6;
+  font-size: 120px !important;
+  font-weight: 700;
+  opacity: 0.06;
+  content: attr(background-title);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  background-color: #020934;
+  color: #e6e6e6;
+}
+
+.footer img {
+  width: 24px;
+  margin-left: 24px;
+}
+
+.form-success {
+  background-color: teal;
+  color: white;
+}
+
+.form-error {
+  background-color: crimson;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /* no underline */
+  transition: color 0.1s ease-in;
+}
+
+a:hover {
+  color: #fb4cf9;
+}
+
+input {
+  background-color: transparent;
+  color: #272727;
+  padding: 10px;
+  border: 2px solid #fb4cf9;
+  font-family: "Space Grotesk";
+  letter-spacing: 1.5px;
+  max-width: 400px;
+  width: 100%;
+  font-size: 100%;
+  margin-right: 8px;
+}
+
+input:focus {
+  background-color: white;
+  outline: none;
+  color: #272727;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 30px;
+  border: 3px solid #fb4cf9;
+  font-family: "Baloo 2";
+  font-size: 20px;
+  background-color: transparent;
+  color: #fb4cf9;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1) !important;
+}
+
+button:hover {
+  background: #ff5ef9;
+  color: #020934;
+  box-shadow: 0 0 0.25rem #ff5ef9, 0 0 0.65rem #ff5ef9;
+}
+
+@media screen and (max-width: 900px) {
+  .main-content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    min-height: calc(100vh - 230px);
+    /* header heigh + footer heigh*/
+  }
+
+  .logo-container img {
+    width: 67px;
+  }
+
+  .logo-container h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .content input {
+    max-width: 100%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  .content button {
+    width: 100%;
+  }
+
+  .content .nice-title::after {
+    font-size: 95px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-content {
+    min-height: calc(100vh - 210px);
+    /* header heigh + footer heigh*/
+  }
+
+  .logo-container img {
+    width: 47px;
+  }
+
+  .logo-container h1 {
+    font-size: 24px;
+  }
+
+  .header-opts a span {
+    display: none;
+  }
+
+  .header-opts a img {
+    display: inline-block;
+    margin-top: 5px;
+  }
+
+  .content .nice-title::after {
+    font-size: 70px !important;
+  }
+}
+
+/* Utilities */
+.max-width-550 {
+  max-width: 550px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+.mt-350 {
+  margin-top: 343px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-140 {
+  margin-bottom: 137px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.flex-center {
+  display: flex;
+}
+
+/*custom sm*/
+@media screen and (max-width: 650px) {
+  .mt-sm-250 {
+    margin-top: 250px !important;
+  }
+
+  .mb-sm-100 {
+    margin-bottom: 100px !important;
+  }
+}
+/*custom xs*/
+@media screen and (max-width: 500px) {
+  .mt-xs-200 {
+    margin-top: 200px !important;
+  }
+
+  .mt-xs-100 {
+    margin-top: 100px !important;
+  }
+}

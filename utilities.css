@@ -1,0 +1,81 @@
+/* Utilities */
+.max-width-550 {
+  max-width: 550px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+.mt-350 {
+  margin-top: 350px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+/*custom sm*/
+@media screen and (max-width: 650px) {
+  .mt-sm-250 {
+    margin-top: 250px !important;
+  }
+
+  .mb-sm-100 {
+    margin-bottom: 100px !important;
+  }
+}
+/*custom xs*/
+@media screen and (max-width: 500px) {
+  .mt-xs-200 {
+    margin-top: 200px !important;
+  }
+
+  .mt-xs-100 {
+    margin-top: 100px !important;
+  }
+}

@@ -46,7 +46,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header,
-.footer {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,23 +95,6 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.main-content .gif-background {
-  width: 100%;
-  position: fixed;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  top: 0px;
-}
-
-.main-content .gif-background img {
-  width: 100%;
-  filter: blur(15px);
-  opacity: 0.1;
-  margin: 0px;
-  padding: 0px;
 }
 
 .content {
@@ -169,24 +152,27 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
 }
 
-.footer {
-  background-color: #020934;
+footer {
+  background-color: transparent;
   color: #e6e6e6;
 }
 
-.footer img {
+footer img {
   width: 24px;
   margin-left: 24px;
 }
 
-.form-success {
-  background-color: teal;
-  color: white;
-}
-
-.form-error {
-  background-color: crimson;
-  color: white;
+.gif-background {
+  width: 100%;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  top: 0px;
+  height: 100vh;
+  background-image: url("./party.gif");
+  background-size: cover;
+  opacity: 0.2;
 }
 
 a {
@@ -223,6 +209,7 @@ input:focus {
 button {
   padding: 10px 30px;
   border: 3px solid #fb4cf9;
+  width: 200px;
   font-family: "Baloo 2";
   font-size: 20px;
   background-color: transparent;
@@ -369,6 +356,20 @@ button:hover {
 
 .pt-40 {
   padding-top: 40px;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .flex-center {

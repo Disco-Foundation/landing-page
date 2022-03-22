@@ -11,7 +11,7 @@
   </head>
 
   <body class="m-0">
-    <header class="header p-30">
+    <header class="header px-30 py-40">
       <div class="logo-container">
         <div class="logo">
           <img
@@ -22,7 +22,7 @@
         <h1 class="m-0">Disco <span class="disco-font-two">Protocol</span></h1>
       </div>
       <div class="header-opts">
-        <a href="mailto:andresmgsl@gmail.com">
+        <a href="mailto:hello@disco.foundation">
           <span>Contact us</span>
         </a>
       </div>
@@ -39,34 +39,15 @@
           </h1>
           <h2 id="second-title">Get your <span>groove</span> on!</h2>
         </div>
-        <a href="https://board.disco.foundation/" target="_blank">
-          <button>Launch app</button>
-        </a>
+        <button id="launch-app-button">Launch app</button>
       </section>
 
-      <section
-        class="content max-width-550 mt-200 mt-xs-100"
-        aria-labelledby="disco-protocol-roadmap"
-      ></section>
-
-      <div class="gif-background">
-        <img src="./party.gif" />
-      </div>
+      <section class="mt-200 mt-xs-100"></section>
     </main>
 
-    <footer class="footer p-30" aria-labelledby="footer-text">
-      <div id="footer-text">🄯 2022 Disco Protocol</div>
-      <div>
-        <a
-          id="disco-protocol-discord"
-          href="https://discord.gg/"
-          arial-laber="Disco Protocol Official Discord"
-          target="_blank"
-        >
-          <img
-            src="https://xycjqai56g6atvzjnkoo6jbfcdbh33hhuuqkb5pxaau64tyfeh2q.arweave.net/vgSYAR3xvAnXKWqc7yQlEMJ97OelIKD19wAp7k8FIfU"
-          />
-        </a>
+    <footer class="p-30" aria-labelledby="footer-text">
+      <div id="footer-text" class="z-10">🄯 2022 Disco Protocol</div>
+      <div class="z-10">
         <a
           id="disco-protocol-twitter"
           href="https://twitter.com/DISCO_Protocol"
@@ -79,21 +60,12 @@
         </a>
       </div>
     </footer>
+    <div class="gif-background"></div>
 
     <script>
-      const processSubscriptionForm = (form) => {
-        const data = new FormData(form);
-        data.append("form-name", "subscription");
-        fetch("/", {
-          method: "POST",
-          body: data,
-        })
-          .then(() => {
-            form.innerHTML = `<div class="form-success p-16">Almost there! We'll contact you.</div>`;
-          })
-          .catch((error) => {
-            form.innerHTML = `<div class="form-error p-16">Error: ${error}</div>`;
-          });
+      // Launch app logic
+      document.getElementById("launch-app-button").onclick = () => {
+        window.open("https://board.disco.foundation/", "_blank");
       };
     </script>
   </body>

@@ -170,7 +170,7 @@ footer img {
   overflow: hidden;
   top: 0px;
   height: 100vh;
-  background-image: url("./party.gif");
+  background-image: url("./assets/party.gif");
   background-size: cover;
   opacity: 0.1;
   filter: blur(20px);

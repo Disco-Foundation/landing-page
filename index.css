@@ -172,7 +172,8 @@ footer img {
   height: 100vh;
   background-image: url("./party.gif");
   background-size: cover;
-  opacity: 0.2;
+  opacity: 0.1;
+  filter: blur(20px);
 }
 
 a {

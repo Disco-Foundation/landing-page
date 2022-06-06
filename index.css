@@ -126,6 +126,45 @@ footer {
   text-shadow: 0px 0px 16px #ffd600;
 }
 
+.content h3 {
+  font-weight: 400;
+  font-size: 21px;
+
+  color: #fff;
+  text-shadow: 0px 0px 2px #fff;
+}
+
+.content h3 span {
+  font-weight: 400;
+  font-size: 22px;
+  /*font-family: "Custom Font";*/
+
+  color: #19FB9B;
+  text-shadow: 0px 0px 16px #19FB9B;
+}
+
+.content h3 a {
+  color: #AF7EFF;
+  text-shadow: 0px 0px 8px #AF7EFF;
+}
+
+.content h4 {
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #00f0ff;
+  text-shadow: 0px 0px 8px #00f0ff;
+  font-family: "Custom Font";
+}
+
+.content h4 span {
+  color: #ffd600;
+  font-size: 20px;
+  font-family: "Baloo 2";
+  text-shadow: 0px 0px 16px #ffd600;
+}
+
+
 .content p {
   font-weight: 400;
   line-height: 28px;
@@ -162,9 +201,17 @@ footer img {
   margin-left: 24px;
 }
 
-.gif-background {
+.background-container {
   width: 100%;
   position: absolute;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+}
+
+.gif-background {
+  width: 100%;
+  position: relative;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -173,7 +220,39 @@ footer img {
   background-image: url("./assets/party.gif");
   background-size: cover;
   opacity: 0.1;
-  filter: blur(20px);
+  filter: blur(10px);
+}
+
+.img1-background {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  height: 110vh;
+  background-image: url("./assets/party2.png");
+  background-size: cover;
+  opacity: 0.2;
+  filter: blur(2px);
+}
+
+.solid-background {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.img2-background {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  height: 50vh;
+  background-image: url("./assets/concert.jpg");
+  background-size: cover;
+  opacity: 0.2;
+  filter: blur(2px);
 }
 
 a {
@@ -228,10 +307,90 @@ button:hover {
   box-shadow: 0 0 0.25rem #ff5ef9, 0 0 0.65rem #ff5ef9;
 }
 
+.disco-card {
+  border: 3px solid #00f0ff;
+  background-color: rgba(0, 240, 251, 0.1);
+  border-color: #00f0ff;
+}
+
+.disco-card.blue:hover {
+  box-shadow: 0 0 0.25rem #00f0ff, 0 0 0.65rem #00f0ff;
+}
+
+
+.disco-border.blue {
+  border: 3px solid #00f0ff;
+  border-color: #00f0ff;
+}
+
+.disco-layer.blue {
+  background-color: rgba(0, 240, 251, 0.1);
+}
+
+.disco-glow:hover.blue {
+  box-shadow: 0 0 0.25rem #00f0ff, 0 0 0.65rem #00f0ff;
+}
+
+.large-card {
+  width: 70%;
+}
+
+
+.team-container {
+  display:flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
 @media screen and (max-width: 900px) {
   .main-content {
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .large-card{
+    width: 85%;
+  }
+
+  .team-container {
+    display:flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img1-background {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 120vh;
+    background-image: url("./assets/party2.png");
+    background-size: cover;
+    opacity: 0.2;
+    filter: blur(2px);
+  }
+  
+  .solid-background {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 150vh;
+  }
+  
+  .img2-background {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 65vh;
+    background-image: url("./assets/concert.jpg");
+    background-size: cover;
+    opacity: 0.2;
+    filter: blur(2px);
   }
 }
 
@@ -311,6 +470,10 @@ button:hover {
   margin-top: 200px;
 }
 
+.mt-150 {
+  margin-top: 150px;
+}
+
 .mt-350 {
   margin-top: 343px;
 }
@@ -383,6 +546,10 @@ button:hover {
     margin-top: 250px !important;
   }
 
+  .mt-sm-440 {
+    margin-top: 440px !important;
+  }
+
   .mb-sm-100 {
     margin-bottom: 100px !important;
   }
@@ -395,5 +562,13 @@ button:hover {
 
   .mt-xs-100 {
     margin-top: 100px !important;
+  }
+
+  .mt-xs-180 {
+    margin-top: 180px !important;
+  }
+
+  .mt-xs-440 {
+    margin-top: 440px !important;
   }
 }

@@ -228,7 +228,7 @@ footer img {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  height: 110vh;
+  height: 100vh;
   background-image: url("./assets/party2.png");
   background-size: cover;
   opacity: 0.2;
@@ -240,7 +240,7 @@ footer img {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  height: 80vh;
+  height: 100vh;
 }
 
 .img2-background {
@@ -248,7 +248,7 @@ footer img {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  height: 50vh;
+  height: 100vh;
   background-image: url("./assets/concert.jpg");
   background-size: cover;
   opacity: 0.2;
@@ -332,7 +332,7 @@ button:hover {
 }
 
 .large-card {
-  width: 70%;
+  width: 80%;
 }
 
 
@@ -342,6 +342,9 @@ button:hover {
   justify-content: space-between;
 }
 
+.what-we-do-container{
+    display: flex;
+}
 
 
 @media screen and (max-width: 900px) {
@@ -386,12 +389,17 @@ button:hover {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    height: 65vh;
+    height: 100vh;
     background-image: url("./assets/concert.jpg");
     background-size: cover;
     opacity: 0.2;
     filter: blur(2px);
   }
+
+  .what-we-do-container{
+    display: flex;
+    flex-direction: column;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -470,12 +478,28 @@ button:hover {
   margin-top: 200px;
 }
 
+.mt-260 {
+  margin-top: 260px;
+}
+
 .mt-150 {
   margin-top: 150px;
 }
 
+.mt-400 {
+  margin-top: 400px;
+}
+
+.mt-450 {
+  margin-top: 450px;
+}
+
+.mt-550 {
+  margin-top: 550px;
+}
+
 .mt-350 {
-  margin-top: 343px;
+  margin-top: 350px;
 }
 
 .mb-10 {
@@ -550,6 +574,10 @@ button:hover {
     margin-top: 440px !important;
   }
 
+  .mt-sm-500 {
+    margin-top: 500px !important;
+  }
+
   .mb-sm-100 {
     margin-bottom: 100px !important;
   }
@@ -564,8 +592,8 @@ button:hover {
     margin-top: 100px !important;
   }
 
-  .mt-xs-180 {
-    margin-top: 180px !important;
+  .mt-xs-320 {
+    margin-top: 320px !important;
   }
 
   .mt-xs-440 {

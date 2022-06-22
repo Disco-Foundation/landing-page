@@ -39,7 +39,8 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   width: 100%;
   /* background-color: #020934; */
-  z-index: 10;
+  z-index: 10000;
+  background-color: #020934a9;
   box-shadow: 0px 4px 15px -4px rgb(0 0 0 / 4%);
   /* border-top: 4px solid #fb4cf9; */
   font-family: "Custom Font";
@@ -101,9 +102,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 768px;
+  height: 100vh;
+  max-width: 60%;
   z-index: 10;
 }
+
 
 .content h1 {
   font-weight: 400;
@@ -338,26 +341,260 @@ button:hover {
 
 .team-container {
   display:flex; 
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+.team-big-container {
+  display:flex; 
+  justify-content: space-between;
+  align-items: center;
 }
 
 .what-we-do-container{
     display: flex;
 }
 
+.what-we-do-subcontainer{
+  width: 50%; 
+  padding: 15px;
+}
 
-@media screen and (max-width: 900px) {
-  .main-content {
-    padding-left: 32px;
-    padding-right: 32px;
+.footer-text {
+  font-size: 20px;
+}
+
+.card-button {
+  font-size: 15px; 
+  width: auto;
+  margin: 0px 5px 5px 0px;
+}
+
+.twitter-logo {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+.footer-img {
+  width: 22px;
+  height: 22px;
+}
+
+.m-content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  max-width: 60%;
+  z-index: 10;
+}
+
+.m-content h1 {
+  font-weight: 400;
+  font-size: 42px;
+
+  color: #00f0ff;
+  text-shadow: 0px 0px 8px #00f0ff;
+  font-family: "Custom Font";
+}
+
+
+.m-content h2 {
+  font-weight: 400;
+  font-size: 26px;
+
+  font-family: "Custom Font";
+}
+
+.m-content h2 span {
+  color: #ffd600;
+  text-shadow: 0px 0px 16px #ffd600;
+}
+
+.m-content h3 {
+  font-weight: 400;
+  font-size: 21px;
+
+  color: #fff;
+  text-shadow: 0px 0px 2px #fff;
+}
+
+.m-content h3 span {
+  font-weight: 400;
+  font-size: 22px;
+  /*font-family: "Custom Font";*/
+
+  color: #19FB9B;
+  text-shadow: 0px 0px 16px #19FB9B;
+}
+
+.m-content h3 a {
+  color: #AF7EFF;
+  text-shadow: 0px 0px 8px #AF7EFF;
+}
+
+.m-content h4 {
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #00f0ff;
+  text-shadow: 0px 0px 8px #00f0ff;
+  font-family: "Custom Font";
+}
+
+.m-content h4 span {
+  color: #ffd600;
+  font-size: 20px;
+  font-family: "Baloo 2";
+  text-shadow: 0px 0px 16px #ffd600;
+}
+
+
+.m-content p {
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.team-container {
+  width: 28%; 
+  padding: 10px; 
+  margin: 5px;
+}
+
+@media screen and (min-width: 1920px){
+  .content h1 {
+    font-size: 72px;
   }
 
-  .large-card{
-    width: 85%;
+  .m-content h1 {
+    font-size: 72px;
+  }
+
+  .content h2 {
+    font-size: 56px;
+  }
+
+
+  .m-content h2 {
+    font-size: 56px;
+  }
+
+  .content button {
+    font-size: 42px;
+    width: 380px;
+  }
+
+  .m-content button {
+    font-size: 42px;
+    width: 380px;
+  }
+
+  .content .card-button {
+    font-size: 25px;
+    width: auto;
+  }
+
+  .m-content .card-button {
+    font-size: 25px;
+    width: auto;
+  }
+
+  .logo-container h1 {
+    font-size: 45px;
+  }
+
+  .disco-font-two {
+    font-size: 45px;
+  }
+
+  .header-opts{
+    font-size: 35px;
+  }
+
+  .content h3 {
+    font-size: 38px;
+  }
+
+  .m-content h3 {
+    font-size: 38px;
+  }
+  
+  .content h3 span {
+    font-size: 38px;
+  }
+
+  .m-content h3 span {
+    font-size: 38px;
+  }
+  
+  .content h4 {
+    font-size: 42px;
+  }
+  
+  .content h4 span {
+    font-size: 38px;
+  }
+  
+  .content p {
+    font-size: 30px;
+  }
+
+  .m-content p {
+    font-size: 30px;
+  }
+
+  .content .twitter-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .m-content .twitter-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-text {
+    font-size: 30px;
+  }
+
+  .footer-img {
+    width: 32px;
+    height: 32px;
   }
 
   .team-container {
+    display:flex; 
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .m-content{
+    margin: 0px;
+    height: 100vh;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  .main-content {
+    /*padding-left: 32px;
+    padding-right: 32px;*/
+  }
+
+  .large-card{
+    width: 100%;
+  }
+
+  .team-container {
+    display:flex; 
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .team-big-container {
     display:flex; 
     flex-direction: column;
     justify-content: space-between;
@@ -369,7 +606,7 @@ button:hover {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    height: 120vh;
+    height: 150vh;
     background-image: url("./assets/party2.png");
     background-size: cover;
     opacity: 0.2;
@@ -381,7 +618,7 @@ button:hover {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    height: 150vh;
+    height: 143vh;
   }
   
   .img2-background {
@@ -399,7 +636,39 @@ button:hover {
   .what-we-do-container{
     display: flex;
     flex-direction: column;
-}
+  }
+
+  .what-we-do-subcontainer {
+    width: auto; 
+    padding: 15px;
+  }
+
+  .m-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: fit-content;
+    max-width: 80%;
+  }
+
+  .buttons-container {
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 8px;
+    justify-content: left; 
+    width: 100%;
+  }
+
+  .team-container {
+    width: 80%; 
+    padding: 10px; 
+    margin: 20px;
+  }
+  .team-big-container {
+    display:flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -31,28 +31,29 @@
       </div>
     </header>
 
-    <main class="main-content m-0 mb-140 mb-sm-100">
+    <main class="main-content m-0">
       <!-- WELCOME-->
       <section
-        class="content flex-center mt-350 mt-sm-250 mt-xs-200"
-        aria-labelledby="main-title"
-      >
-        <div>
-          <h1 id="main-title" class="m-0 mb-10">
-            Making events funky with Crypto
-          </h1>
-          <h2 id="second-title"><span>#Party2Earn</span></h2>
-        </div>
-        <button id="launch-app-button">Launch app</button>
-      </section>
-      <!-- WHAT WE DO-->
-      <section class="content flex-center mt-450 mt-sm-500 mt-xs-400" aria-labelledby="main-title">
-        <div class="what-we-do-container">
+          class="content flex-center" style="height: 100vh;"
+          aria-labelledby="main-title"
+        >
           <div>
+            <h1 id="main-title" class="m-0 mb-10">
+              Making events funky with Crypto
+            </h1>
+            <h2 id="second-title"><span>#Party2Earn</span></h2>
+          </div>
+          <button id="launch-app-button">Launch app</button>
+        </section>
+      
+      <!-- WHAT WE DO-->
+      <section class="m-content flex-center" aria-labelledby="main-title" >
+        <div class="what-we-do-container">
+          <div class="what-we-do-subcontainer">
             <h1 id="main-title" class="m-0 mb-10">
               What we Do
             </h1>
-            <h3 id="second-title" style="text-align: justify;"> Looking to minimize the gap between IRL experiences and blockchain technology.    
+            <h3 id="second-title"> Looking to minimize the gap between IRL experiences and blockchain technology.    
             </h3>
             <h3><span>DISCO Protocol</span> offers a suite of tools that decentralize the way events are managed.
               <br>      
@@ -60,7 +61,7 @@
             <h4><span>For both, event creators and communities.</span></h4>
           </div>
           
-          <div style="display: flex; flex-direction: column; align-items: center; width: fit-content;">
+          <div class ="what-we-do-subcontainer" style="display: flex; flex-direction: column; align-items: center;">
             <div class="p-4 border-4 disco-layer disco-border disco-glow ease-out duration-300 blue flex flex-col large-card">
               <div style="margin: 10px;">
                 <video style="width: 100%;" controls>
@@ -68,7 +69,7 @@
                 </video>
                 <div >
                   <h4 style="margin: 5px 0px; width: 100%;">we're on solana's devnet network</h4>
-                  <h3 id="second-title" style="margin: 0px 0px 5px; font-size: 16px;"> Give it a try:
+                  <h3 id="second-title" style="margin: 0px 0px 5px;"> Give it a try:
                     <br>
                     Follow <a href="https://twitter.com/DISCO_Protocol/status/1513975528650424323">this thread</a> to know how. 
                     <br>
@@ -77,9 +78,9 @@
                     <br>
                   </h3>
                   
-                  <div style="display: flex; justify-content: space-between;">
-                    <a href="documents/instructions_create_event.pdf" target="_blank" style="padding: 10px 10px; width: 49%;"><button id="launch-app-button" style="font-size: 15px; width: auto;" >Create events</button></a>
-                    <a href="documents/instructions_manage_event.pdf" target="_blank" style="padding: 10px 10px; width: 49%;"><button id="launch-app-button" style="font-size: 15px; width: auto;" >Manage events</button></a>
+                  <div class="buttons-container">
+                    <a href="documents/instructions_create_event.pdf" target="_blank" style="padding: 10px 10px; width: auto;"><button id="launch-app-button" class="card-button" >Create events</button></a>
+                    <a href="documents/instructions_manage_event.pdf" target="_blank" style="padding: 10px 10px; width: auto;"><button id="launch-app-button" class="card-button" >Manage events</button></a>
                   </div>
                 </div>
 
@@ -90,15 +91,15 @@
 
       </section>
       <!-- OUR TEAM -->
-      <section class="content flex-center mt-300 mt-sm-250 mt-xs-200"
+      <section class="m-content flex-center"
         aria-labelledby="main-title">
         <div style="margin-bottom: 50px;">
           <h1 id="main-title" class="m-0 mb-10">
             Our Team
           </h1>
         </div>
-        <div class="team-container">
-          <div class="p-4 border-4 disco-layer disco-border disco-glow ease-out duration-300 blue flex flex-col " style="width: 12rem; padding: 10px; margin: 5px;">
+        <div class="team-big-container">
+          <div class="p-4 border-4 disco-layer disco-border disco-glow ease-out duration-300 blue flex flex-col team-container">
             <img src="./assets/cindy.png" style="width:100%;">
             <h3 style="margin: 0px 0px;">Cindy Guerra</h3>
             <h4 style="margin: 0px 0px;"><span>Co-founder</span></h4>
@@ -106,12 +107,12 @@
             flex-direction: row;
             align-items: center;">
               <img
-              src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM" style="width: 22px; height:22px; margin-right: 5px;"
+              src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM" class="twitter-logo"
               />
               <h3 style="margin: 0px 0px;"><a href="https://twitter.com/GuerraTas">@GuerraTas</a></h3>
             </div>
           </div>
-          <div class="p-4 border-4 disco-layer disco-border disco-glow ease-out duration-300 blue flex flex-col " style="width: 12rem; padding: 10px; margin: 5px;">
+          <div class="p-4 border-4 disco-layer disco-border disco-glow ease-out duration-300 blue flex flex-col team-container" >
             <img src="./assets/dayana.jpg" style="width:100%;">
             <h3 style="margin: 0px 0px;">Dayana Rodrigues</h3>
             <h4 style="margin: 0px 0px;"><span>Co-founder</span></h4>
@@ -119,14 +120,14 @@
             flex-direction: row;
             align-items: center;">
               <img
-              src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM" style="width: 22px; height:22px; margin-right: 5px;"
+              src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM" class="twitter-logo"
               />
               <h3 style="margin: 0px 0px;"><a href="https://twitter.com/dayanac_rp">@dayanac_rp</a></h3>
             </div>
            
 
           </div>
-          <div class="p-4 border-4 disco-layer disco-border disco-glow ease-out duration-300 blue flex flex-col " style="width: 12rem; padding: 10px; margin: 5px;">
+          <div class="p-4 border-4 disco-layer disco-border disco-glow ease-out duration-300 blue flex flex-col  team-container">
             <img src="./assets/leticia.jpg" style="width:100%;">
             <h3 style="margin: 0px 0px;">Leticia Palmares</h3>
             <h4 style="margin: 0px 0px;"><span>Community Manager</span></h4>
@@ -134,7 +135,7 @@
             flex-direction: row;
             align-items: center;">
               <img
-              src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM" style="width: 22px; height:22px; margin-right: 5px;"
+              src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM" class="twitter-logo"
               />
               <h3 style="margin: 0px 0px;"><a href="https://twitter.com/braziliancrypto">@braziliancrypto</a></h3>
             </div>
@@ -145,7 +146,7 @@
         </div>
       </section>
       <!--CONNECT WITH US-->
-      <section class="content flex-center mt-550 mt-xs-320" aria-labelledby="main-title">
+      <section class="content flex-center" aria-labelledby="main-title" style="height: 100vh; ">
         <div style="margin-bottom: 50px;">
           <h1 id="main-title" class="m-0 mb-10">
             Connect with us
@@ -158,25 +159,28 @@
     </main>
 
     <footer class="p-30" aria-labelledby="footer-text">
-      <div id="footer-text" class="z-10">🄯 2022 Disco Protocol</div>
+      <div id="footer-text" class=" footer-text z-10">🄯 2022 Disco Protocol</div>
       <div class="z-10">
         <a
+          
           id="disco-protocol-discord"
           href="https://discord.com/invite/T797Wv5Uex"
           arial-laber="Disco Protocol Official Discord Server"
           target="_blank"
         >
-          <img
+          <img class="footer-img"
             src="https://arweave.net/vgSYAR3xvAnXKWqc7yQlEMJ97OelIKD19wAp7k8FIfU"
           />
         </a>
         <a
+          
           id="disco-protocol-twitter"
           href="https://twitter.com/DISCO_Protocol"
           arial-laber="Disco Protocol Official Twitter"
           target="_blank"
         >
           <img
+          class="footer-img"
             src="https://arweave.net/9pVgL9J9m3KUjQLSjv5GsIpBPf64vY6HRp-INIyJEzM"
           />
         </a>
@@ -184,9 +188,9 @@
     </footer>
     <div class="background-container">
       <div class="gif-background"></div>
-      <div class="img1-background"></div>
+      <!--<div class="solid-background"></div>
       <div class="solid-background"></div>
-      <div class="img2-background"></div>
+      <div class="img2-background"></div>-->
     </div>
     
     <script>

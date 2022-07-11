@@ -103,7 +103,7 @@ footer {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  max-width: 60%;
+  max-width: 80%;
   z-index: 10;
 }
 
@@ -335,7 +335,7 @@ button:hover {
 }
 
 .large-card {
-  width: 80%;
+  width:100%;
 }
 
 
@@ -388,7 +388,7 @@ button:hover {
   justify-content: center;
   width: 100%;
   height: fit-content;
-  max-width: 60%;
+  max-width: 80%;
   z-index: 10;
 }
 
@@ -578,7 +578,7 @@ button:hover {
   
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .main-content {
     /*padding-left: 32px;
     padding-right: 32px;*/
@@ -824,9 +824,9 @@ button:hover {
   padding-right: 30px;
 }
 
-.py-40 {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .z-10 {
